@@ -1,6 +1,6 @@
-# crispwaters.github.io
+# waters.it.com
 
-Personal site for Chris Waters, hosted on GitHub Pages.
+Personal site for [Chris Waters](https://waters.it.com), hosted on GitHub Pages.
 
 > Due to limitations with GitHub Pages, the site must be completely static.  
 > Avoid using `/app` dir, use `getStaticProps` and `getStaticPaths` instead.  
