@@ -2,24 +2,9 @@
 
 Personal site for [Chris Waters](https://waters.it.com), hosted on GitHub Pages.
 
-> Due to limitations with GitHub Pages, the site must be completely static.  
-> Avoid using `/app` dir, use `getStaticProps` and `getStaticPaths` instead.  
-> Further Reading:  
-> https://nextjs.org/docs/pages/building-your-application/data-fetching  
-> https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation  
+# Tech Stack
 
-Technology Stack:
-
-- NextJS
-
-## Commands
-
-`npm run dev` - start development server  
-`npm run build` - build production site  
-
-## Repository Architecture
-
-Refer to https://nextjs.org/docs/pages/getting-started/project-structure for project architecture guidelines
+This project utilizes `svelte` and `sveltekit` with `@sveltejs/adapter-static` to compile the site.
 
 # Credits
 
