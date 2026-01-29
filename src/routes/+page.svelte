@@ -1,22 +1,20 @@
-<h1>Welcome to my site!</h1>
-<p>It is currently under construction. Please check back later.</p>
-<div class="w-full space-y-4">
-	<div class="flex items-center justify-between">
-		<div class="flex items-center justify-center space-x-4">
-			<div class="placeholder-circle size-16 animate-pulse"></div>
-			<div class="placeholder-circle size-14 animate-pulse"></div>
-			<div class="placeholder-circle size-10 animate-pulse"></div>
-		</div>
-	</div>
-	<div class="space-y-4">
-		<div class="placeholder animate-pulse"></div>
-		<div class="grid grid-cols-4 gap-4">
-			<div class="placeholder animate-pulse"></div>
-			<div class="placeholder animate-pulse"></div>
-			<div class="placeholder animate-pulse"></div>
-			<div class="placeholder animate-pulse"></div>
-		</div>
-		<div class="placeholder animate-pulse"></div>
-		<div class="placeholder animate-pulse"></div>
-	</div>
+<script>
+	let components = [
+		{ c: 4, r: 3 },
+		{ c: 8, r: 1 },
+		{ c: 8, r: 2 },
+		{ c: 8, r: 1 },
+		{ c: 4, r: 1 }
+	];
+</script>
+
+<div class="grid grid-cols-12 grid-flow-row gap-4">
+	{#each components as { c, r }}
+		<div class="col-span-{c} row-span-{r} min-h-{r}0 bg-fuchsia-950"></div>
+	{/each}
+	<div class="col-span-4 row-span-3 min-h-30 rounded-4xl bg-amber-600"></div>
+	<div class="col-span-8 rounded-4xl min-h-10 bg-amber-500"></div>
+	<div class="col-span-8 row-span-2 min-h-20 rounded-4xl bg-amber-400"></div>
+	<div class="col-span-8 rounded-4xl min-h-10 bg-fuchsia-500"></div>
+	<div class="col-span-4 rounded-4xl min-h-10 bg-blue-600"></div>
 </div>
